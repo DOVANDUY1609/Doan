@@ -1,0 +1,7 @@
+D:\Đồ án\đồ án dp\DoanDP2\DoanDP2\bin\Debug\DoanDP2.exe.config
+D:\Đồ án\đồ án dp\DoanDP2\DoanDP2\bin\Debug\DoanDP2.exe
+D:\Đồ án\đồ án dp\DoanDP2\DoanDP2\bin\Debug\DoanDP2.pdb
+D:\Đồ án\đồ án dp\DoanDP2\DoanDP2\obj\Debug\DoanDP2.csprojAssemblyReference.cache
+D:\Đồ án\đồ án dp\DoanDP2\DoanDP2\obj\Debug\DoanDP2.csproj.CoreCompileInputs.cache
+D:\Đồ án\đồ án dp\DoanDP2\DoanDP2\obj\Debug\DoanDP2.exe
+D:\Đồ án\đồ án dp\DoanDP2\DoanDP2\obj\Debug\DoanDP2.pdb

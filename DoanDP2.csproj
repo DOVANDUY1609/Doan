@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{44EAC5E9-7D41-44C6-97C7-6716DE5A45AE}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>DoanDP2</RootNamespace>
+    <AssemblyName>DoanDP2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Business\GiabanBLL.cs" />
+    <Compile Include="Business\HoadonbanBLL.cs" />
+    <Compile Include="Business\HoadonnhapBLL.cs" />
+    <Compile Include="Business\Interface\IDGiabanBLL.cs" />
+    <Compile Include="Business\Interface\IDHoadonbanBLL.cs" />
+    <Compile Include="Business\Interface\IDHoadonnhapBLL.cs" />
+    <Compile Include="Business\Interface\IDKhachhangBLL.cs" />
+    <Compile Include="Business\Interface\IDLoaidoBLL.cs" />
+    <Compile Include="Business\Interface\IDMathangBLL.cs" />
+    <Compile Include="Business\Interface\IDNhacungcapBLL.cs" />
+    <Compile Include="Business\Interface\IDNhanvienBLL.cs" />
+    <Compile Include="Business\KhachhangBLL.cs" />
+    <Compile Include="Business\LoaidoBLL.cs" />
+    <Compile Include="Business\MathangBLL.cs" />
+    <Compile Include="Business\NhacungcapBLL.cs" />
+    <Compile Include="Business\NhanvienBLL.cs" />
+    <Compile Include="DataAcess\GiabanDAL.cs" />
+    <Compile Include="DataAcess\HoadonbanDAL.cs" />
+    <Compile Include="DataAcess\HoadonnhapDAL.cs" />
+    <Compile Include="DataAcess\Interface\IDGiabanDAL.cs" />
+    <Compile Include="DataAcess\Interface\IDHoadonbanDAL.cs" />
+    <Compile Include="DataAcess\Interface\IDHoadonnhapDAL.cs" />
+    <Compile Include="DataAcess\Interface\IDKhachhang.cs" />
+    <Compile Include="DataAcess\Interface\IDLoaido.cs" />
+    <Compile Include="DataAcess\Interface\IDMathangDAL.cs" />
+    <Compile Include="DataAcess\Interface\IDNhacungcapDAL.cs" />
+    <Compile Include="DataAcess\Interface\IDNhanvienDAL.cs" />
+    <Compile Include="DataAcess\KhachhangDAL.cs" />
+    <Compile Include="DataAcess\LoaidoDAL.cs" />
+    <Compile Include="DataAcess\MathangDAL.cs" />
+    <Compile Include="DataAcess\NhacungcapDAL.cs" />
+    <Compile Include="DataAcess\NhanvienDALcs.cs" />
+    <Compile Include="entities\Giaban.cs" />
+    <Compile Include="entities\Hoadonban.cs" />
+    <Compile Include="entities\Hoadonnhap.cs" />
+    <Compile Include="entities\Khachhang.cs" />
+    <Compile Include="entities\Loaido.cs" />
+    <Compile Include="entities\Mathang.cs" />
+    <Compile Include="entities\Nhan vien.cs" />
+    <Compile Include="entities\Nhà cung cấp.cs" />
+    <Compile Include="Presenation\formgiaban.cs" />
+    <Compile Include="Presenation\formhoadonban.cs" />
+    <Compile Include="Presenation\formhoadonnhap.cs" />
+    <Compile Include="Presenation\formKhachhangcs.cs" />
+    <Compile Include="Presenation\formLoaido.cs" />
+    <Compile Include="Presenation\formmathang.cs" />
+    <Compile Include="Presenation\formNhacungcap.cs" />
+    <Compile Include="Presenation\formnhanvien.cs" />
+    <Compile Include="Presenation\Menu chinh.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Untility\Congcu.cs" />
+    <Compile Include="Untility\List.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
