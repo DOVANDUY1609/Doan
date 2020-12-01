@@ -88,5 +88,17 @@ namespace MyStore.Presenation
                 Console.WriteLine("Khong ton tai ma san pham nay");
             }
         }
+         public void timkiem()
+        {
+            Console.Clear();
+            Console.Write("Nhap ma hoa don ban can tim :");
+            string ma = Console.ReadLine();
+            Console.WriteLine("                    HIEN THI THONG TIN TIM KIEM");
+            Console.WriteLine("\t" + "mahdb" + "\t" + "manvb" + "\t" + "ngayban" + "\t\t\t" + "Soluong" + "\t" + "Gia");
+            foreach (var sp in spDLL.LayDSHoadonban())
+                if (sp.mahdb.Contains(ma))
+                    Console.WriteLine("\t" + sp.mahdb + "\t" + sp.manvb + "\t" + sp.ngayban + "\t" + sp.Soluong + "\t" + sp.Gia);
+            Console.ReadLine();
+        }
     }
 }
