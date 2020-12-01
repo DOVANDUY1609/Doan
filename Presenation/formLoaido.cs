@@ -75,5 +75,18 @@ namespace MyStore.Presenation
                 spDLL.XoaLoaido(b);
             }
         }
+        
+         public void timkiem()
+        {
+            Console.Clear();
+            Console.Write("Nhap ma loai can tim :");
+            string ma = Console.ReadLine();
+            Console.WriteLine("          HIEN THI THONG TIN TIM KIEM");
+            Console.WriteLine("\t" + "maloai" + "\t" + "tenloai" + "\t\t" + "dacdiem");
+            foreach (var sp in spDLL.LayDSLoaido())
+                if (sp.maloai.Contains(ma))
+                    Console.WriteLine("\t" + sp.maloai + "\t" + sp.tenloai + "\t\t" + sp.dacdiem);
+            Console.ReadLine();
+        }
     }
 }
