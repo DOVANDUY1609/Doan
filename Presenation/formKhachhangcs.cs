@@ -77,5 +77,17 @@ namespace MyStore.Presenation
             }
         }
 
+        public void timkiem()
+        {
+            Console.Clear();
+            Console.Write("Nhap ma khach hang can tim :");
+            string ma = Console.ReadLine();
+            Console.WriteLine("          HIEN THI THONG TIN TIM KIEM");
+            Console.WriteLine("\t" + "makh" + "\t" + "tenkhachhang" + "\t\t" + "sdt" + "\t\t" + "diachi");
+            foreach (var sp in spDLL.LayDSKhachhang())
+                if (sp.makh.Contains(ma))
+                    Console.WriteLine("\t" + sp.makh + "\t" + sp.tenkhachhang + "\t\t" + sp.sdt + "\t\t" + sp.diachi);
+            Console.ReadLine();
+        }
     }
 }
