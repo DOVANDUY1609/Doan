@@ -79,5 +79,17 @@ namespace MyStore.Presenation
                 spDLL.XoaNhacungcap(b);
             }
         }
+        public void timkiem()
+        {
+            Console.Clear();
+            Console.Write("Nhap ma nha cung cap can tim :");
+            string ma = Console.ReadLine();
+            Console.WriteLine("                    HIEN THI THONG TIN TIM KIEM");
+            Console.WriteLine("\t" + "mancc" + "\t" + "tenncc" + "\t" + "sdt" + "\t\t" + "diachi");
+            foreach (var sp in spDLL.LayDSNhacungcap())
+                if (sp.mancc.Contains(ma))
+                    Console.WriteLine("\t" + sp.mancc + "\t" + sp.tenncc + "\t" + sp.sdt + "\t\t" + sp.diachi);
+            Console.ReadLine();
+        }
     }
 }
