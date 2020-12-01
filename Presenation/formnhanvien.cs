@@ -79,6 +79,18 @@ namespace MyStore.Presenation
                 spDLL.Xoanhanvien(b);
             }
         }
+        public void timkiem()
+        {
+            Console.Clear();
+            Console.Write("Nhap ma nhan vien can tim :");
+            string ma = Console.ReadLine();
+            Console.WriteLine("                HIEN THI THONG TIN TIM KIEM");
+            Console.WriteLine("\t" + "Manv" + "\t" + "tennv" + "\t" + "Gioitinh" + "\t" + "ngaysinh");
+            foreach (var sp in spDLL.LayDSnhanvien())
+                if (sp.manv.Contains(ma))
+                    Console.WriteLine("\t" + sp.manv + "\t" + sp.tennv + "\t" + sp.gioitinh + "\t\t" + sp.ngaysinh);
+            Console.ReadLine();
+        }
     }
 }
 
