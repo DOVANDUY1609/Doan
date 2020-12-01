@@ -112,5 +112,17 @@ namespace MyStore.Presenation
             }
          
         }
+         public void timkiem()
+        {
+            Console.Clear();
+            Console.Write("Nhap ma hang can tim :");
+            string ma = Console.ReadLine();
+            Console.WriteLine("        HIEN THI THONG TIN TIM KIEM");
+            Console.WriteLine("\t"+ "mahang" + "\t\t" + "tenhang" + "\t\t" + "Giaban");
+            foreach (var s in spDLL.LayDSGiaban())
+                if (s.mahang.Contains(ma))
+                    Console.WriteLine("\t"+s.mahang + "\t\t" + s.tenhang + "\t\t" + s.Giaban);
+            Console.ReadLine();
+        }
     }
 }
